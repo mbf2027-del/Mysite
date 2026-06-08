@@ -1,141 +1,271 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>تطبيق مُفوتِر | قسّم مصاريفك بدون احراج ولا لخبطة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <img src="Assets/svg/logo.svg" alt="logo"/>
-        <nav class="navigation">
-            <ul>
-                <li><a href="#Main">الرئيسية</a></li>
-                <li><a href="#ValueProp">لماذا مفوتر؟</a></li>
-                <li><a href="#Features">الميزات</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
 
-
-            </ul>
-        </nav>
-
+    <header class="main-header">
+        <div class="container nav-container">
+            <div class="logo">
+                <span class="logo-icon">
+                    <img src="Assets/logo.png" alt="logo" class="logo-img">
+                </span>
+                <!-- <span class="logo-text">مُفوتِر</span> -->
+            </div>
+            <nav class="nav-menu" id="navMenu">
+                <a href="#features" class="nav-link">الميزات</a>
+                <a href="#why-us" class="nav-link">ليه مُفوتِر؟</a>
+                <a href="#how-it-works" class="nav-link">كيف يشتغل؟</a>
+                <a href="#faq" class="nav-link">الأسئلة الشائعة</a>
+                <a href="#download" class="btn btn-primary mobile-cta">حمّل التطبيق الآن</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#download" class="btn btn-primary desktop-cta">حمّل التطبيق</a>
+                <button class="menu-toggle" id="menuToggle" aria-label="قائمة التنقل">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
     </header>
-    <hr />
-  <section class="hero" id="Main">
-    <img class="Frontimage" src="Assets/svg/Frontimage.svg" alt="Frontimage" />
-     <div class="heroSub">
-        <h1 class="name">تطبيق مفوتر</h1>
-        <h1 class="title">شارك الوناسة قسم التكلفة</h1>
-        <div class="heroBtns">
-        <!-- صورة مرتبطة برابط متجر Google Play -->
-        <a 
-            href="https://play.google.com/store/apps/details?id=com.mofawter.app" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="Assets/svg/GooglePlay.svg" alt="logo" style="height:100px; width:auto;">
-            </a>
-        <!-- صورة مرتبطة برابط متجر App Store -->
-        <a 
-            href="https://apps.apple.com/sa/app/mofawter-%D9%85-%D9%81%D9%88%D8%AA-%D8%B1/id6749479093" 
-            target="_blank" 
-            rel="noopener noreferrer">
-            <img src="Assets/svg/AppStore.svg" alt="logo" style="height:100px; width:auto;">
-        </a>
 
-  </section>
+    <main>
+        <section class="hero-section" id="home">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <span class="badge">🚀 طوّرنا طريقة تقسيم الفواتير!</span>
+                    <h1 class="hero-title">قسّم مصاريفك مع أخوياك <span class="highlight">بدون حرج ولا لخبطة</span></h1>
+                    <p class="hero-subtitle">تطبيق "مُفوتِر" يفك لك أزمة الحسابات أو المصاريف المشتركة مع أي أحد سواء السفرات، أو حتى غداء الدوام. صوّر الفاتورة، والذكاء الاصطناعي يقسمها بينكم بلمحة عين، ويساعدك تتبع مصاريفك!</p>
+                    
+                    <div class="cta-group">
+                        
+                        <a href="https://apps.apple.com/sa/app/mofawter-%D9%85-%D9%81%D9%88%D8%AA-%D8%B1/id6749479093" target="_blank" rel="noopener noreferrer">
+                            <span class="store-icon">
+                            <img src="Assets/AppStore.svg.png" alt="App Store" style="width:170px; height:auto; object-fit:contain;">
+                            </span>
+                        </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mofawter.app" target="_blank" rel="noopener noreferrer">
+                            <span class="store-icon">
+                            <img src="Assets/PlayStore.svg.png" alt="Google Play" style="width:170px; height:auto; object-fit:contain;">
+                            </span>
+                        </a>
+                    </div>
 
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">+1 ألف</span>
+                            <span class="stat-label">مستتخدم يجرب التطبيق </span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0٪</span>
+                            <span class="stat-label">حرج أو زعل بين الأخويا</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">0.2</span>
+                            <span class="stat-label">ثانية لمسح الفاتورة</span>
+                        </div>
+                    </div>
+                </div>
 
-  <section class="ValueProp" id="ValueProp">
-      <img
-        src="assets/svg/ValueProp.svg"
-        alt="Mofawter"
-        class="ValuePropimage" 
-        />
+                <div class="hero-visual reveal">
+                    <div class="phone-mockup">
+                        <div class="phone-screen">
+                            <div class="app-header">
+                                <span>قطّة الشباب 🏕️</span>
+                                <span class="app-balance">المجموع: ٢٤٠ ر.س</span>
+                            </div>
+                            <div class="app-users">
+                                <div class="user-pill paid">أحمد (دفع الفاتورة)</div>
+                                <div class="user-pill pending">خالد (باقي ما سدد)</div>
+                                <div class="user-pill paid">سلطان (تم السداد)</div>
+                            </div>
+                            <div class="app-invoice-card">
+                                <div class="invoice-title">🧾 عشاء الأمس مطعم المطعم</div>
+                                <div class="invoice-split">حصة الشخص: <strong>٨٠ ر.س</strong></div>
+                                <button class="app-action-btn">نغزة للتذكير ⚡</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="textContainer">
-        <div class="textTitle">
-          <h1 class="why">لماذا مًفوتِر؟</h1>
+        <section class="features-section" id="features">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">ميزات تخلي حياتك أسهل</h2>
+                    <p class="section-desc">ودعنا الطرق القديمة والدفاتر، وجبنا لك ميزات تدار بالذكاء الاصطناعي</p>
+                </div>
+
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">📸</div>
+                        <h3>قراءة ذكية للفواتير</h3>
+                        <p>لا تكتب شيء بيدك! صوّر أي فاتورة وتطبيقنا بيحلل الأصناف والأسعار ويفرزها تلقائياً.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">⚡</div>
+                        <h3>تسوية بلمحة عين</h3>
+                        <p>اعرف كم لك و كم عليك حسب الأصناف اللي تشتريها سواء مع صديق السكن أو زميل العمل ، في البقالة أو المطعم</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">🔔</div>
+                        <h3>نغزات ودية</h3>
+                        <p>مستحي تطلب فلوسك؟ التطبيق بيرسل إشعارات لطيفة وتذكير تلقائي للأخويا بدون أي إحراج.</p>
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon">📊</div>
+                        <h3>مجموعات مخصصة</h3>
+                        <p>تقدر تخصص مجموعة للمصاريف المشتركة، و الكل يتابع المصاريف المشتركة و تقسيمها</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-us-section" id="why-us">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">ليه تحتاج تطبيق "مُفوتِر" في جوالك؟</h2>
+                    <p class="section-desc font-friendly">شف الفرق بنفسك بين حسابات زمان وحسابات مُفوتِر</p>
+                </div>
+
+                <div class="comparison-container reveal">
+                    <div class="comp-box bad">
+                        <h3>الحوسة القديمة 😩</h3>
+                        <ul>
+                            <li>❌ واحد يمسك الحسابات ويضيع في الأرقام.</li>
+                            <li>❌ تمر أسابيع وتستحي تطلب حقك من أخوياك.</li>
+                            <li>❌ حسابات معقدة للأصناف اللي ما أكل منها الجميع.</li>
+                            <li>❌ النتيجة: واحد يدفع دايم والباقي ينسون!</li>
+                        </ul>
+                    </div>
+                    <div class="comp-box good">
+                        <h3>مع تطبيق مُفوتِر 😎</h3>
+                        <ul>
+                            <li>✅ الذكاء الاصطناعي يحسب كل شيء بدقة ١٠٠٪.</li>
+                            <li>✅ إشعارات وتذكير آلي نيابة عنك وبكل ودية.</li>
+                            <li>✅ تقسيم مرن (بالتساوي، أو حسب طلب كل شخص).</li>
+                            <li>✅ الكل يصفّي حسابه و يدفع اللي عليه والكل راضي.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="how-it-works-section" id="how-it-works">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">كيف يشتغل؟ بثلاث خطوات بس!</h2>
+                </div>
+
+                <div class="steps-grid">
+                    <div class="step-card reveal">
+                        <div class="step-number">01</div>
+                        <h3>اضف أخوياك كمستفيدين</h3>
+                        <p>ضف أخوياك كمستفيدين عشان تقدر تشاركهم فئات مخصصة أو فواتير معينة</p>
+                    </div>
+                    <div class="step-card reveal">
+                        <div class="step-number">02</div>
+                        <h3>صوّر أو ضيف الفاتورة</h3>
+                        <p>ارفع الفاتورة من المعرض أو صورها، بيتعرف الضكاء الاصطناعي ع الأصناف  وقسم على حسب كل صنف لمين؟.</p>
+                    </div>
+                    <div class="step-card reveal">
+                        <div class="step-number">03</div>
+                        <h3>صفّوا الحساب بضغطة زر</h3>
+                        <p>بيوصلك في قائمة المشاركة كم لك و كم عليك صفر حسابك و ادفع اللي عليك أول بأول</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-section" id="faq">
+            <div class="container faq-container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">عندك استفسار؟ أجوبتنا جاهزة</h2>
+                </div>
+
+                <div class="faq-list">
+                    <div class="faq-item reveal">
+                        <button class="faq-question">هل التطبيق مجاني؟ <span>➕</span></button>
+                        <div class="faq-answer">
+                            <p>إي نعم! تحميل التطبيق وميزات التقسيم الأساسية والمجموعات مجانية مع رسوم اشتراك لتوزيع بعض الميزات.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">كيف يضمن التطبيق ما يصير حرج بين الأصدقاء؟ <span>➕</span></button>
+                        <div class="faq-answer">
+                            <p>التطبيق يعتمد على نظام تقسم الفاتورة حسب الأصناف، بحيث مو مطلوب منك تدفع إلا على الأصناف اللي اخترتها.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item reveal">
+                        <button class="faq-question">هل التطبيق خاص بتقسيم الفواتير؟ <span>➕</span></button>
+                        <div class="faq-answer">
+                            <p>لا، التطبيق يخدمك في تتبع مصاريفك ،وتقسيمها لفئات عشان تضبط مصاريفك بشكل أفضل و تقلل الصرف الزايد اللي مانحس فيه أحيانا</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="download-section" id="download">
+            <div class="container download-box reveal">
+                <h2>جاهز تصفّي حساباتك؟ 👋</h2>
+                <p>حمل تطبيق مُفوتِر اليوم، وعيش طلعاتك وسفراتك بدون تفكير في الرياضيات والفلوس!</p>
+                <div class="cta-group center">
+                    <a href="https://apps.apple.com/sa/app/mofawter-%D9%85-%D9%81%D9%88%D8%AA-%D8%B1/id6749479093" target="_blank" rel="noopener noreferrer">
+                        <span class="store-icon">
+                            <img src="Assets/AppStore.svg.png" alt="App Store" style="width:170px; height:auto; object-fit:contain;">
+                        </span>
+                    </a>
+                        <a href="https://play.google.com/store/apps/details?id=com.mofawter.app" target="_blank" rel="noopener noreferrer">
+                        <span class="store-icon">
+                            <img src="Assets/PlayStore.svg.png" alt="Google Play" style="width:170px; height:auto; object-fit:contain;">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <span class="logo-icon">
+                    <img src="Assets/whitelogo.png" alt="logo" class="logo-img">
+                </span>
+                <p>تطبيق يهدف لتسهيل التعاملات المالية اليومية بين الأصدقاء بكل وضوح ومحبة، ويساعدك على تتبع مصاريفك وتقليل أي مصروفات زائدة.</p>
+            </div>
+            <div class="footer-links">
+                <h4>روابط سريعة</h4>
+                <a href="#features">الميزات</a>
+                <a href="#why-us">ليه مُفوتِر؟</a>
+                <a href="#how-it-works">كيف يشتغل؟</a>
+            </div>
+            <div class="footer-legal">
+                <h4>الشروط والأمان</h4>
+                <a href="https://www.companymbf.org/privacy.html" target="_blank" rel="noopener noreferrer">سياسة الخصوصية</a>
+                <a href="https://www.companymbf.org/terms.html" target="_blank" rel="noopener noreferrer">الشروط والأحكام</a>
+                <!-- <a href="#">اتصل بنا</a> -->
+            </div>
+            <div class="footer-contact">
+            <h4>تواصل معنا</h4>
+            <a href="tel:+966556945728" class="footer-contact-link" dir="ltr">📞 +966 55 694 5728</a>
+            <a href="mailto:mofawtir@gmail.com" class="footer-contact-link">✉️ mofawtir@gmail.com</a>
         </div>
-        
-     <p class="whyPar">
-      في عالم اليوم المتسارع، تزداد الحاجة إلى أدوات مالية ذكية تساعد الأفراد والعائلات وشركاء السكن على تنظيم مصروفاتهم، خاصةً مع تزايد النفقات المشتركة وتنوع مصادر الإنفاق. تطبيق "مفوتر" يأتي ليقدم حلاً مبتكرًا يعتمد على مسح الفواتير فقط، دون الحاجة لأي إدخال يدوي، ليمنح المستخدمين تجربة مالية رقمية متكاملة وسهلة.
-      
-     </p>
-    </div>
-   </section>
-<section class="features-section" id="Features">
- <h2 class="section-title">الميزات</h2>
-
-     <div class="features-container">
-    <div class="feature-box">
-      <div class="feature-icon">🌙</div>
-      <div class="feature-text">مسح ذكي للفواتير</div>
-    </div>
-
-    <div class="feature-box">
-      <div class="feature-icon">💆‍♀️</div>
-      <div class="feature-text">مشاركة المصاريف</div>
-    </div>
-
-    <div class="feature-box">
-      <div class="feature-icon">🧘</div>
-      <div class="feature-text">تقسيم سريع للقواتير</div>
-    </div>
-
-    <div class="feature-box">
-      <div class="feature-icon">👥</div>
-      <div class="feature-text">حفظ الفواتير</div>
-    </div>
-
-    <div class="feature-box">
-      <div class="feature-icon">🍎</div>
-      <div class="feature-text">عرض للانفاق الشهري</div>
-    </div>
-
-    <div class="feature-box">
-      <div class="feature-icon">📈</div>
-      <div class="feature-text">قوائم شراء ذكية</div>
-    </div>
-  </div>
-</section>
-<section class="contactContainer" id="contact">
-<div class="contactTitle">
-        <h1 class="aboutName">تواصل معنا</h1>
-      </div>
-      <div class="contact">
-        <div class="emailAndPhone">
-          <img src="Assets/svg/Email.svg" alt="email logo" />
-          <a href="mailto:Mofawtir@gmail.com"
-            ><h3>Mofawtir@gmail.com</h3></a
-          >
         </div>
-        <div class="emailAndPhone">
-          <img src="Assets/svg/phone.svg" alt="phone logo" />
-          <h3>+0556945728</h3>
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © ٢٠٢٦ تطبيق مُفوتِر. صُنع بحب 💚 لإدارة مصاريفكم.</p>
         </div>
-      </div>
- <div class="socialMedia">
-        <a
-          href="https://x.com/Mofawter"
-          target="_blank"
-          ><img src="Assets/svg/twitter (1).png" alt=" x account"
-        /></a>
-        <a href="https://www.instagram.com/mofawter/" target="_blank"
-          ><img src="Assets/svg/insta.png" alt=" insta account"
-        /></a>
-        <a href="https://www.tiktok.com/@mofawter" target="_blank"
-          ><img src="Assets/svg/tik-tok (1).png" alt="tiktok account"
-        /></a>
-      </div>
-      
-
-
-</section>
-
-    <hr />
-    <footer>
-      <p>صُنع لراحتك</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
